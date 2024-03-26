@@ -6,7 +6,8 @@ import dungeoncrawler.impl.actions.Move;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EntityImpl implements Entity
+public class
+EntityImpl implements Entity
 {
 	private String name;
 	private Location location;
