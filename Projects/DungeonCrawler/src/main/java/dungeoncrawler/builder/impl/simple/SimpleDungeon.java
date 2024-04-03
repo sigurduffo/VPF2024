@@ -1,6 +1,7 @@
 package dungeoncrawler.builder.impl.simple;
 
 import dungeoncrawler.builder.Dungeon;
+import dungeoncrawler.builder.Entity;
 import dungeoncrawler.builder.Location;
 import dungeoncrawler.builder.Portal;
 
@@ -29,12 +30,20 @@ public class SimpleDungeon implements Dungeon
 		for(Location location : locations)
 		{
 			res.append(location.getName()).append(System.lineSeparator());
+			res.append("    Portals:").append(System.lineSeparator());
 			for(Portal portal : location.getPortals())
 			{
 				res.append("    ")
 					.append(portal.getName())
 					.append(" -> ")
 					.append(portal.getDestination().getName())
+					.append(System.lineSeparator());
+			}
+			res.append("    Entities:").append(System.lineSeparator());
+			for(Entity entity : location.getEntities())
+			{
+				res.append("    ")
+					.append(entity.getName())
 					.append(System.lineSeparator());
 			}
 		}

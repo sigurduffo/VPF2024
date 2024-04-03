@@ -7,4 +7,5 @@ public interface Location
 	String getName();
 	String getDescription();
 	List<Portal> getPortals();
+	List<Entity> getEntities();
 }
