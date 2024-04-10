@@ -1,6 +1,6 @@
 package dungeoncrawler;
 
-public interface Action
+public interface  eAction
 {
 	String getName();
 	void execute();
