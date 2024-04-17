@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface Dungeon
 {
-	List<Location> getLocations();
+	List<? extends Location> getLocations();
 }
