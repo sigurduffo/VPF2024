@@ -2,12 +2,14 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Timer;
 
 // extending Frame class to our class AWTExample1
 public class AWTExample1 extends Frame
 {
 	public void paint(Graphics g)
 	{
+		super.paint(g);
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setColor(Color.RED);
 		drawCenteredCircle(g2d, 150, 150, 100);
